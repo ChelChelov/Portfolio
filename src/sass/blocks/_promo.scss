@@ -1,0 +1,10 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main_bg_2.jpg') no-repeat 50% / cover;
+    padding-top: 340px;
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+    }
+}
