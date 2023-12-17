@@ -2,9 +2,39 @@
     min-height: 100vh;
     position: relative;
     background: url('../img/main_bg_2.jpg') no-repeat 50% / cover;
-    padding-top: 340px;
+    padding-top: 390px;
     &__title {
         width: 535px;
         margin-top: 10px;
+    }
+    &__subtitle {
+        position: relative;
+        @include before_circle;
+        padding-left: 10px;
+        z-index: 2;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        width: 270px;
+    }
+    &__link {
+        color: #000;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: none;
+        &:hover {
+            color: #000;
+            text-decoration: none;
+            text-transform: none; 
+        }
+        &_white {
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
     }
 }
