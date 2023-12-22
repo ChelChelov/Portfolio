@@ -1,6 +1,29 @@
-// .grid {
-//     display: grid;
-//     grid-template: repeat(2, minmax(40px, auto)) / repeat(2, 1fr);
-//     column-gap: 50px;
-//     row-gap: 20px;
-// }
+.grid-elem {
+    display: grid;
+    grid-template: repeat(2, auto) / 30px 1fr;
+    column-gap: 24px;
+    &__img {
+        grid-column: 1;
+        grid-row: 1;
+        position: relative;
+        @include before_circle_grid;
+        padding-left: 10px;
+        z-index: 2;
+        img {
+            position: absolute;
+            top: 25px;
+            left: 15px;
+        }
+    }
+    &__title {
+        grid-column: 2;
+        grid-row: 1; 
+        align-self: center;
+    }
+    &__descr {
+        grid-column: 2;
+        grid-row: 2; 
+        font-size: 12px;
+        font-weight: 500;
+    }
+}

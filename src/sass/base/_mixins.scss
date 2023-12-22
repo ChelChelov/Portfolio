@@ -11,3 +11,10 @@
         top: -20%;
     }
 }
+
+@mixin before_circle_grid {
+        @include before_circle;
+        &:before {
+            top: 25%;
+        }
+}
