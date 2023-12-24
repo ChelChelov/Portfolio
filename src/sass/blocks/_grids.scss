@@ -1,29 +1,15 @@
 .grid-elem {
     display: grid;
-    grid-template: repeat(2, auto) / 30px 1fr;
-    column-gap: 24px;
+    grid-template-columns: 40px 200px;
+    column-gap: 20px;
     &__img {
-        grid-column: 1;
-        grid-row: 1;
         position: relative;
         @include before_circle_grid;
-        padding-left: 10px;
-        z-index: 2;
-        img {
-            position: absolute;
-            top: 25px;
-            left: 15px;
-        }
-    }
-    &__title {
-        grid-column: 2;
-        grid-row: 1; 
-        align-self: center;
+        padding: 14px 0 0 16px;
     }
     &__descr {
-        grid-column: 2;
-        grid-row: 2; 
         font-size: 12px;
         font-weight: 500;
+        margin-top: 6px;
     }
 }
