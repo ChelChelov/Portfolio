@@ -13,8 +13,37 @@
 }
 
 @mixin before_circle_grid {
-        @include before_circle;
-        &:before {
-            top: 0;
-        }
+    @include before_circle;
+    &:before {
+        top: 0;
+    }
+}
+
+@mixin before_circle_center {
+    @include before_circle;
+    &:before {
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@mixin circle_15px {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: $main-color;
+    }
+}
+
+@mixin circle_experience {
+    @include circle_15px;
+    &:before {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
