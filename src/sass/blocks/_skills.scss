@@ -8,4 +8,37 @@
     &__subtitle {
         text-align: center;
     }
+    &__grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+    &__item {
+        border: 1px solid #000;
+        background: rgba(196, 196, 196, 0.00);
+        padding: 30px 30px 25px 30px;
+        &-img {
+            height: 65px;
+            max-width: 160px;
+            display: flex;
+            align-items: center;
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+        &-title {
+            margin-top: 20px;
+        }
+        &-descr {
+            margin-top: 15px;
+            color: #000;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
 }

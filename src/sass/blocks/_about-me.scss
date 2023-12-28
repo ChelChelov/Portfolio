@@ -1,7 +1,6 @@
 .about-me {
     padding-top: 120px;
     &__wrapper {
-        // height: 600px;
         display: grid;
         grid-template: repeat(2, minmax(245px, auto)) / 400px 670px;
         grid-auto-rows: minmax(245px, auto);
