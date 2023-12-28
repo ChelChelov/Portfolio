@@ -1,0 +1,11 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle_center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+}
