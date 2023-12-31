@@ -24,6 +24,14 @@
         font-weight: 500;
         line-height: normal;
     }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        @include before_circle_center;
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
 }
 
 

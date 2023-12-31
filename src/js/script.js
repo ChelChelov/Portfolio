@@ -18,6 +18,13 @@ closeElem.addEventListener('click', () => {
     hamburger.classList.remove('active');
 });
 
+const percents = document.querySelectorAll('.skills__rate-percent'),
+      lines = document.querySelectorAll('.skills__rate-line .skills__rate-line_percent');
+      
+percents.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
+
 
 
 
