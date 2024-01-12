@@ -24,8 +24,3 @@ const percents = document.querySelectorAll('.skills__rate-percent'),
 percents.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
-
-
-
-
-
