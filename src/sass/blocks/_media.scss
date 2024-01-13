@@ -1,9 +1,26 @@
+@media(max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
 @media(max-width: 1200px) {
     .container {
         max-width: 960px;
     }
-    .sidepanel {
-        display: none;
+    .about-me {
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            gap: 35px;
+        }
+        &__skills {
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
+            column-gap: 20px;
+            .grid-elem {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
     }
 }
 
@@ -21,6 +38,23 @@
             line-height: normal;
         }
     }
+    .about-me {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+        }
+        &__subtitle {
+            font-size: 32px;
+        }
+        &__skills {
+            grid-template-columns: 360px;
+            grid-auto-rows: minmax(115px, auto);
+            .grid-elem {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
+        }
+    }
 }
 
 @media(max-width: 768px) {
@@ -31,11 +65,50 @@
         &_fs48 {
             font-size: 32px;
         }
+        &_fs16 {
+            margin-bottom: 0;
+        }
     }
     .promo {
         &__title {
             width: 360px;
             line-height: normal;
+        }
+    }
+    .menu {
+        &__item {
+            a {
+                &:hover {
+                    color: #fff;
+                    &::before {
+                        background-color: rgba(196, 196, 196, 0.00);
+                    }
+                }
+            }
+        }
+    }
+    .about-me {
+        padding-top: 40px;
+        &__wrapper {
+            // grid-template: 340px auto auto / 1fr;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        &__photo {
+            height: 400px;
+            width: 100%;
+            margin: 0 auto;
+            img {
+                object-fit: none;
+            }
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            .grid-elem {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
         }
     }
 }
@@ -44,19 +117,47 @@
     .container {
         width: 100%;
         padding: 0 10px;
-        // max-width: 300px;
     }
     .title {
         &_fs48 {
             font-size: 26px;
         }
     }
+    .hamburger {
+        right: 20px;
+        top: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px; 
+            padding-left: 20px;
+        }
+    }
     .promo {
+        background: url('../img/Background_example.jpg') no-repeat 57% / cover;
         &__btns {
             margin-top: 32px;
         }
         &__title {
             width: 300px;
+        }
+    }
+    .about-me {
+        &__subtitle {
+            font-size: 24px;
+            line-height: normal;
+            margin-top: 15px;
+        }
+        &__photo {
+            height: 340px;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+        &__descr {
+            .divider {
+                margin-top: 15px;
+            }
         }
     }
 }
