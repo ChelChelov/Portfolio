@@ -29,6 +29,20 @@
             column-gap: 60px
         }
     }
+    .skills {
+        padding-top: 90px;
+        &__grid {
+            grid-template-columns: repeat(3, 270px);
+            justify-content: center;
+            margin-top: 45px;
+        }
+        &__info {
+            margin-top: 60px;
+            grid-template-columns: repeat(2,350px);
+            column-gap: 0;
+            justify-content: space-around;
+        }
+    }
 }
 
 @media(max-width: 992px) {
@@ -69,6 +83,14 @@
             row-gap: 40px;
         }
     }
+    .skills {
+        &__grid {
+            grid-template-columns: repeat(2, 270px);
+        }
+        &__info {
+            grid-template-columns: repeat(2,320px);
+        }
+    }
 }
 
 @media(max-width: 768px) {
@@ -81,6 +103,9 @@
         }
         &_fs16 {
             margin-bottom: 0;
+        }
+        &__section-subtitle {
+            font-size: 30px;
         }
     }
     .promo {
@@ -129,6 +154,15 @@
         padding-top: 60px;
         &__wrapper {
             padding: 40px 10px 0 10px;
+        }
+    }
+    .skills {
+        padding-top: 60px;
+        &__info {
+            margin-top: 50px;
+            grid-template-columns: repeat(2,250px);
+            justify-content: start;
+            column-gap: 30px;
         }
     }
 }
@@ -189,6 +223,17 @@
     .experience {
         &__wrapper {
             grid-template-columns: 1fr;
+        }
+    }
+    .skills {
+        &__grid {
+            grid-template-columns: 270px;
+            gap: 13px;
+        }
+        &__info {
+            grid-template-columns: 300px;
+            justify-content: center;
+            row-gap: 40px;
         }
     }
 }
