@@ -1,5 +1,5 @@
 .policy {
-    margin: 60px 0;
+    padding: 60px 10px 10px 30px;
     &__list {
         &-title {
             padding-top: 10px;
@@ -7,5 +7,13 @@
     }
     &__sublist {
         padding-left: 40px;
+    }
+    &__link {
+        display: block;
+        text-align: center;
+        text-decoration: underline;
+        &:hover {
+            color: #007bff;;
+        }
     }
 }
