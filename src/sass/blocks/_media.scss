@@ -378,4 +378,27 @@
             font-size: 24px;
         }
     }
+    .modal {
+        width: 300px;
+        height: 120px;
+        padding: 25px 40px 15px 40px;
+        &__close {
+            top: 5px;
+            right: 8px;
+        }
+    }
+}
+
+@media(max-height: 431px) {
+    .menu {
+       &__block {
+        padding-top: 50px;
+       }
+       &__item {
+        font-size: 21px;
+       }
+       &__social {
+        bottom: 15px;
+       }
+    }
 }

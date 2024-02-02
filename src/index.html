@@ -61,12 +61,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="#">ПРО МЕНЕ</a></li>
-                    <li class="menu__item"><a href="#">МІЙ ДОСВІД</a></li>
-                    <li class="menu__item"><a href="#">МОЇ НАВИЧКИ</a></li>
-                    <li class="menu__item"><a href="#">МОЇ РОБОТИ</a></li>
-                    <li class="menu__item"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__item"><a href="#">КОНТАКТИ</a></li>
+                    <li class="menu__item"><a href="#about-me">ПРО МЕНЕ</a></li>
+                    <li class="menu__item"><a href="#experience">МІЙ ДОСВІД</a></li>
+                    <li class="menu__item"><a href="#skills">МОЇ НАВИЧКИ</a></li>
+                    <li class="menu__item"><a href="#portfolio">МОЇ РОБОТИ</a></li>
+                    <li class="menu__item"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__item"><a href="#contacts">КОНТАКТИ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -93,13 +93,13 @@
                 Я web-розробник з міста Хмельницький
             </h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфоліо</a>
-                <a href="#" class="promo__link btn btn_hidden">Про мене</a>
+                <a href="#portfolio" class="promo__link btn">Портфоліо</a>
+                <a href="#about-me" class="promo__link btn btn_hidden">Про мене</a>
             </div>
         </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="container">
             <div class="about-me__wrapper">
                 <div class="about-me__photo">
@@ -160,7 +160,7 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section class="experience" id="experience">
         <div class="container">
             <h2 class="title title_fs16 title__section-title">Досвід</h2>
             <div class="title title_fs36 title__section-subtitle">
@@ -247,7 +247,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2 class="title title_fs16 title__section-title">Навички</h2>
             <div class="title title_fs36 title__section-subtitle">
@@ -385,7 +385,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fs16 title__section-title">Портфоліо</h2>
             <div class="title title_fs36 title__section-subtitle">
@@ -416,7 +416,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <h2 class="title title_fs16 title__section-title">Прайс-лист</h2>
             <div class="divider divider_center"></div>
@@ -467,7 +467,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -527,6 +527,18 @@
             </div>
         </div>
     </section>
+
+    <div class="overlay">
+        <div class="modal" id="modal">
+            <div class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 29 30" fill="none">
+                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
+                  </svg>
+            </div>
+            <div class="modal__subtitle">Дякую за Ваш вибір!</div>
+            <div class="modal__descr">Я зв'яжуся з Вами найближчим часом!</div>
+        </div>
+    </div>
     
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
